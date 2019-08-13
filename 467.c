@@ -1,21 +1,21 @@
 /*************************************************************************
-	> File Name: 100.c
+	> File Name: 467.c
 	> Author: 
 	> Mail: 
-	> Created Time: 2019年07月22日 星期一 13时56分47秒
+	> Created Time: 2019年08月12日 星期一 20时23分18秒
  ************************************************************************/
 
 #include<stdio.h>
-int main()
-{
-int n, i;
-    double sum;
-    sum = 0;
+
+
+int main(){
+   int   n;
     scanf("%d", &n);
-    for (i = 1 ; i <= 6; ++i)
-    {
-        sum =  (sum + n)*(1+0.00417);
+    long long  ans = 1;
+    for(int i = 1; i <= n; i++){
+
+        ans *= i;
     }
-    printf("$%.2lf", sum);
+    printf("%lld", ans);
     return 0;
 }

@@ -11,5 +11,30 @@ int main()
 {
 int n;
     scanf("%d", &n);
-
+    if (n<=10)
+    {
+    printf("%d",n);
+    }
+    else
+    {
+    if(n<=100)
+        {
+        printf("%d", n/10 + n%10);
+        }
+        else
+        {
+        if(n<=1000)
+            {
+                printf("%d",n/100+n%100/10+n%10);
+            }
+            else
+            {
+            if (n<10000)
+                {
+                printf("%d",n/1000+n%1000/100+n%1000%100/10+n%10);
+                }
+            }
+        }
+    }
+return 0;
 }

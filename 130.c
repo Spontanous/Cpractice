@@ -1,21 +1,19 @@
 /*************************************************************************
-	> File Name: 100.c
+	> File Name: 130.c
 	> Author: 
 	> Mail: 
-	> Created Time: 2019年07月22日 星期一 13时56分47秒
+	> Created Time: 2019年07月27日 星期六 21时00分36秒
  ************************************************************************/
 
 #include<stdio.h>
-int main()
-{
-int n, i;
+int main(){
+int m, n, i;
     double sum;
     sum = 0;
-    scanf("%d", &n);
-    for (i = 1 ; i <= 6; ++i)
-    {
-        sum =  (sum + n)*(1+0.00417);
+    scanf("%d%d", &m, &n);
+    for (i = 1; i <= n; i++){
+    sum = (sum + m)*(1+0.00417);
     }
-    printf("$%.2lf", sum);
+    printf("$%.2f", sum);
     return 0;
 }

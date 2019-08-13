@@ -1,21 +1,19 @@
 /*************************************************************************
-	> File Name: 106.c
+	> File Name: 7.25.3.c
 	> Author: 
 	> Mail: 
-	> Created Time: 2019年07月21日 星期日 18时30分12秒
+	> Created Time: 2019年07月25日 星期四 18时38分11秒
  ************************************************************************/
 
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-double n;
-    scanf("%lf", &n);
-    if (n >= 0){
-    printf("%lf", n);
-    }
-    else {
-    printf("%lf", -n);
+int i;
+    i=1;
+    while (i<=100)
+    {
+    printf("%d",i);
+        i++;
     }
     return 0;
 }
