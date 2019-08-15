@@ -7,15 +7,21 @@
 
 #include<stdio.h>
 
-int is_val(int x){
-    x = x % 10 + x
+int is_val(int x, int base){
+   int tmp = x, sum = 0;
+    while(x){
+        sum = sum * base + x % base;
+        x /= base;
+    }
+    return sum == tmp;
 }
 
 int main(){
     int n;
-    scanf("%d". &n);
-    for(int i = 1; i < n; i++){
-        if(is_val(int i)){
+    int cnt = 0;
+    scanf("%d", &n);
+    for(int i = 1; i <= n; i++){
+        if(is_val(i, 10)){
             cnt += 1;
         }
     }

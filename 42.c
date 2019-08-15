@@ -7,16 +7,17 @@
 
 #include<stdio.h>
 #define max 200
-int f[max + 5][max + 5];
-
+int f[max + 5] = {0};
+int arr[max + 5] = {0};
 int main(){
     int m, n, k;
     f[0] = 1;
     int cnt = 0;
-    scanf("%d", &m, &n);
+    scanf("%d%d", &m, &n);
+    getchar();
     for(int i = 0;i < m; i++){
-        scnaf("%d", &k);
-        cnt += 1
+        scanf("%d", &k);
+        cnt += 1;
         arr[i] = k;
     }
     for(int i = 0; i < max; i++){
@@ -25,7 +26,5 @@ int main(){
         }
     }
     printf("%d", arr[max]);
-
-
     return 0;
 }
